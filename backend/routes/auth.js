@@ -6,7 +6,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 // Sign Up Route
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 router.post('/signup', async (req, res) => {
   const { name, email, password } = req.body;
